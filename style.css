@@ -57,9 +57,6 @@ ul {
     width: 50%;
 }
 
-.imgbanner {
-}
-
 .textobanner {
     display: flex;
     align-items: flex-start;
@@ -72,6 +69,11 @@ ul {
     padding: 0.5rem;
     background-color: aquamarine;
     border-radius: 0.5rem;
+}
+
+.imgbanner img {
+    object-fit: contain;
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -99,6 +101,17 @@ ul {
 
     .home {
         display: none;
+    }
+
+    .banner {
+        flex-flow: column-reverse;
+        width: 100%;
+    }
+
+    .textobanner,
+    .imgbanner {
+        width: 100%;
+        margin: 0 1rem;
     }
 }
 
