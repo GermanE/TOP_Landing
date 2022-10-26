@@ -78,10 +78,32 @@ ul {
     max-width: 100%;
 }
 
+/*Inicio CSS Servicios*/
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectxt{
+    align-self: center;
+}
+
+.serviceBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceBox img{
+    max-width: 300px;
+}
+
 @media only screen and (max-width: 576px) {
     body {
         width: 100%;
     }
+
+/*Header y banner*/
 
     .right {
         display: flex;
@@ -135,5 +157,9 @@ ul {
         align-self: center;
         margin: 1rem;
     }
+
+/*Servicios*/
+
+
 }
 
