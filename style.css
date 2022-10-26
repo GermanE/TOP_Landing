@@ -83,6 +83,7 @@ ul {
 .servicios {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .sectxt{
@@ -92,6 +93,9 @@ ul {
 .serviceBox {
     display: flex;
     flex-direction: column;
+    background-color: #555;
+    align-items: center;
+    padding: 1rem;
 }
 
 .serviceBox img{
