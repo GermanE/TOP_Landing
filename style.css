@@ -40,7 +40,9 @@ body {
     width: 80%;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 5rem auto;
+    background-color: #777;
+    padding: 2rem;
 }
 
 .titulo {
@@ -77,8 +79,17 @@ ul {
 }
 
 @media only screen and (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+
     .right {
+        display: flex;
         order: 2;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0.5rem auto;
     }
 
     .left {
@@ -106,12 +117,23 @@ ul {
     .banner {
         flex-flow: column-reverse;
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    .textobanner,
     .imgbanner {
         width: 100%;
         margin: 0 1rem;
+    }
+
+    .textobanner {
+        width: 80%;
+        display: flex;
+    }
+
+    .botoncont {
+        align-self: center;
+        margin: 1rem;
     }
 }
 
