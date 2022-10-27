@@ -78,14 +78,13 @@ ul {
     max-width: 100%;
 }
 
-/*Inicio CSS Servicios*/
-
 .sectxt {
     text-align: center;
     font-size: 2rem;
     padding: 0;
-    margin: 1rem;
+    margin: 3rem;
 }
+/*Inicio CSS Servicios*/
 
 .servicios {
     display: flex;
@@ -108,10 +107,36 @@ ul {
 
 .boxtit {
     margin: 0.75rem auto 0.75rem 0;
+    font-size: 1.5rem;
 }
 
 #box p {
     margin: 0;
+}
+
+/*Ubicacion*/
+
+.dircont {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto 5rem;
+    background-color: #777;
+    padding: 0;
+}
+
+.dirdesc {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2.5rem;
+}
+
+.dirtit {
+    font-size: 1.75rem;
+    font-weight: bolder;
 }
 
 /*
@@ -249,7 +274,7 @@ ul {
 
 /*Servicios*/
 
-
+/*Ubicacion*/
 
 }
 
