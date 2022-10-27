@@ -80,6 +80,41 @@ ul {
 
 /*Inicio CSS Servicios*/
 
+.sectxt {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    margin: 1rem;
+}
+
+.servicios {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+#box {
+    background-color: #666;
+    padding: 0.5rem;
+    max-width: 300px;
+}
+
+#box img {
+    max-width: 300px;
+}
+
+.boxtit {
+    margin: 0.75rem auto 0.75rem 0;
+}
+
+#box p {
+    margin: 0;
+}
+
+/*
 .servicios {
     display: grid; 
     grid-template-columns: 1   repeat(auto-fill, minmax(186px, 1fr)); 
@@ -114,7 +149,7 @@ ul {
     align-items: center;
   }
 
-/*
+
 
 .servicios {
     display: flex;
@@ -213,6 +248,7 @@ ul {
     }
 
 /*Servicios*/
+
 
 
 }
