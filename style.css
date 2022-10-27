@@ -81,13 +81,59 @@ ul {
 /*Inicio CSS Servicios*/
 
 .servicios {
+    display: grid; 
+    grid-template-columns: 1   repeat(auto-fill, minmax(186px, 1fr)); 
+    grid-template-rows: 0.25fr 1.75fr; 
+    grid-gap: 0.75rem;
+    grid-template-areas: 
+      "sectxt sectxt sectxt sectxt"
+      "serviceBox serviceBox2 serviceBox3 serviceBox4"; 
+  }
+  .sectxt {    
+    grid-area: sectxt; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+  
+  .serviceBox { grid-area: serviceBox; }
+  .serviceBox2 { grid-area: serviceBox2; }
+  .serviceBox3 { grid-area: serviceBox3; } 
+  .serviceBox4 { grid-area: serviceBox4; }
+
+  #box img {
+    max-width: 300px;
+
+  }
+
+  #box {
+    background-color: #333;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #box h3 {
+    align-self: baseline;
+  }
+
+/*
+
+.servicios {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+
+.serviceItem {
+    display: flex;
     gap: 1rem;
 }
 
 .sectxt{
     align-self: center;
+    display: block;
 }
 
 .serviceBox {
@@ -96,11 +142,19 @@ ul {
     background-color: #555;
     align-items: center;
     padding: 1rem;
+    gap: 1rem;
+    max-width: 400px;
 }
 
 .serviceBox img{
     max-width: 300px;
 }
+
+.serviceBox p {
+    margin: 0;
+}
+
+*/
 
 @media only screen and (max-width: 576px) {
     body {
